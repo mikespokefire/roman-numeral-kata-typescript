@@ -87,6 +87,21 @@ describe("#generate", () => {
     expect(actual).toEqual("CL");
   });
 
+  it("returns CL given an input of 400", () => {
+    const actual = RomanNumberGenerator.generate(400);
+    expect(actual).toEqual("CD");
+  });
+
+  it("returns CL given an input of 500", () => {
+    const actual = RomanNumberGenerator.generate(500);
+    expect(actual).toEqual("D");
+  });
+
+  it("returns CL given an input of 800", () => {
+    const actual = RomanNumberGenerator.generate(800);
+    expect(actual).toEqual("DCCC");
+  });
+
   it("returns CM given an input of 900", () => {
     const actual = RomanNumberGenerator.generate(900);
     expect(actual).toEqual("CM");
