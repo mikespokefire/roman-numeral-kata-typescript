@@ -1,0 +1,9 @@
+{
+  "name": "js-roman-numerals-kata",
+  "version": "1.0.0",
+  "description": "Roman Numerals Kata",
+  "main": "index.js",
+  "author": "Michael Smith <mike@spokefire.co.uk>",
+  "license": "MIT",
+  "private": true
+}
