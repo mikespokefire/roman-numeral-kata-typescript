@@ -1,5 +1,7 @@
 # Roman Numeral Kata in TypeScript
 
+[![Build Status](https://travis-ci.org/mikespokefire/roman-numeral-kata-typescript.svg?branch=master)](https://travis-ci.org/mikespokefire/roman-numeral-kata-typescript)
+
 ## Running
 
 There is a docker container available with all the code already in it.
