@@ -1,8 +1,4 @@
 class RomanNumberGenerator {
-  public static generate(num: number): string {
-    return new RomanNumberGenerator(num).generate();
-  }
-
   private num: number;
 
   private humanNumbers: number[] = [
@@ -12,11 +8,13 @@ class RomanNumberGenerator {
     "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I",
   ];
 
-  constructor(num: number) {
-    this.num = num;
+  constructor() {
+    this.num = 0;
   }
 
-  public generate(): string {
+  public generate(num: number): string {
+    this.num = num;
+
     if (!this.isValid()) {
       throw new Error("Number must be greater than 0 and less than 4000");
     }
