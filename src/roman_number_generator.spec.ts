@@ -121,4 +121,16 @@ describe("#generate", () => {
     const actual = RomanNumberGenerator.generate(3999);
     expect(actual).toEqual("MMMCMXCIX");
   });
+
+  it("throws an error if the number is 0 or below", () => {
+    expect(() => {
+      RomanNumberGenerator.generate(0);
+    }).toThrowError("Number must be greater than 0 and less than 4000");
+  });
+
+  it("throws an error if the number is 4000 or above", () => {
+    expect(() => {
+      RomanNumberGenerator.generate(4000);
+    }).toThrowError("Number must be greater than 0 and less than 4000");
+  });
 });
