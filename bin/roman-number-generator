@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+const RomanNumberGenerator = require("../dist/roman_number_generator").default;
+
+const humanNumber = process.argv[2];
+
+try {
+  const romanNumeral = new RomanNumberGenerator().generate(humanNumber);
+  console.log(romanNumeral);
+} catch(err) {
+  console.error("ERROR:", err.message);
+  process.exit(1); // Non zero exit code since we have an error
+}
